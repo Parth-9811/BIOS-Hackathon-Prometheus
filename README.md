@@ -140,7 +140,7 @@ The Track A speedup on ResNet-18 is two factors that multiply: **epochs about 2.
 Requirements: Linux, Python 3.10+, about 1 GB of free disk space. The scripts in `scripts/` use the [fish shell](https://fishshell.com/); the Python commands work in any shell.
 
 ```bash
-git clone <this-repo-url> bios
+git clone https://github.com/Parth-9811/BIOS-Hackathon-Prometheus.git bios
 cd bios
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
