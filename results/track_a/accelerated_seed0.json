@@ -1,0 +1,125 @@
+{
+  "name": "accelerated",
+  "seed": 0,
+  "target_acc": 0.8,
+  "reached": true,
+  "time_to_target_s": 225.85661134101974,
+  "energy_to_target_j": 5637.303103,
+  "final_acc": 0.8122,
+  "history": [
+    {
+      "epoch": 1,
+      "train_s": 18.95,
+      "loss": 1.8667693138122559,
+      "test_acc": 0.4267,
+      "joules": 537.1
+    },
+    {
+      "epoch": 2,
+      "train_s": 36.39,
+      "loss": 1.6770274639129639,
+      "test_acc": 0.4377,
+      "joules": 1023.9
+    },
+    {
+      "epoch": 3,
+      "train_s": 54.08,
+      "loss": 1.3247150182724,
+      "test_acc": 0.5654,
+      "joules": 1512.1
+    },
+    {
+      "epoch": 4,
+      "train_s": 72.39,
+      "loss": 1.1624772548675537,
+      "test_acc": 0.6147,
+      "joules": 1985.5
+    },
+    {
+      "epoch": 5,
+      "train_s": 91.02,
+      "loss": 1.0621839761734009,
+      "test_acc": 0.6465,
+      "joules": 2449.4
+    },
+    {
+      "epoch": 6,
+      "train_s": 109.99,
+      "loss": 0.9882065653800964,
+      "test_acc": 0.6162,
+      "joules": 2913.1
+    },
+    {
+      "epoch": 7,
+      "train_s": 129.0,
+      "loss": 0.9228999018669128,
+      "test_acc": 0.6759,
+      "joules": 3371.4
+    },
+    {
+      "epoch": 8,
+      "train_s": 148.17,
+      "loss": 0.8629717230796814,
+      "test_acc": 0.708,
+      "joules": 3827.0
+    },
+    {
+      "epoch": 9,
+      "train_s": 167.55,
+      "loss": 0.8092407584190369,
+      "test_acc": 0.7026,
+      "joules": 4283.4
+    },
+    {
+      "epoch": 10,
+      "train_s": 186.95,
+      "loss": 0.7391461133956909,
+      "test_acc": 0.738,
+      "joules": 4736.0
+    },
+    {
+      "epoch": 11,
+      "train_s": 206.34,
+      "loss": 0.6481763124465942,
+      "test_acc": 0.7791,
+      "joules": 5187.1
+    },
+    {
+      "epoch": 12,
+      "train_s": 225.86,
+      "loss": 0.5533769726753235,
+      "test_acc": 0.8122,
+      "joules": 5637.3
+    }
+  ],
+  "env": {
+    "torch": "2.15.0+cpu",
+    "python": "3.11.18",
+    "cpu": "AMD Ryzen 7 250 w/ Radeon 780M Graphics",
+    "logical_cpus": 16,
+    "torch_threads": 8,
+    "avx512_bf16": true,
+    "amx_bf16": false,
+    "mkldnn": true,
+    "env": {
+      "OMP_NUM_THREADS": null,
+      "KMP_AFFINITY": null,
+      "GOMP_CPU_AFFINITY": null,
+      "LD_PRELOAD": null
+    }
+  },
+  "max_epochs": 13,
+  "threads": 8,
+  "source": "hf",
+  "synthetic": false,
+  "tag": "",
+  "batch_size": 256,
+  "base_lr": 0.1,
+  "warmup_epochs": 1.0,
+  "schedule": "onecycle",
+  "epochs_for_schedule": null,
+  "channels_last": true,
+  "compile": false,
+  "bf16": true,
+  "profile": false
+}

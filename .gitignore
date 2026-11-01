@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+
+# CIFAR-10 cache (~300 MB, re-created automatically on first run)
+data/
+
+# Local-only material (presentation drafts, not part of the code release)
+local_only/
+
+# Backups that the proof scripts create before overwriting a results folder
+results/*_old_*/
+results/*/*_old_*/
+
+# Output of `accelerated.py --profile` (written to the working directory)
+/profile*.txt
+
+# Smoke-test output (see README quick start)
+results/smoke/

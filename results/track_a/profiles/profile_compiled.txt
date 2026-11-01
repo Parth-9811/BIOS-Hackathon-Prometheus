@@ -1,0 +1,30 @@
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                             aten::convolution_backward        38.55%     888.794ms        40.94%     943.911ms       1.573ms           600  
+## Call CompiledFxGraph fkewkhh6keulewejseor5q2pf2vq...        15.65%     360.732ms        57.59%        1.328s      44.255ms            30  
+                                            aten::copy_        12.77%     294.528ms        12.77%     294.528ms     213.426us          1380  
+                                      aten::_fused_sgd_        11.11%     256.209ms        21.75%     501.529ms      16.718ms            30  
+                               aten::mkldnn_convolution         9.26%     213.587ms         9.33%     215.123ms     358.539us           600  
+## Call CompiledFxGraph fw55yscozwwd2qaurrbbrhf74aax...         7.60%     175.321ms        17.21%     396.796ms      13.227ms            30  
+                                  aten::scatter_reduce_         0.84%      19.479ms         0.85%      19.515ms     650.510us            30  
+                      Optimizer.zero_grad#SGD.zero_grad         0.49%      11.246ms         0.49%      11.246ms     374.881us            30  
+                                Optimizer.step#SGD.step         0.43%       9.825ms        22.18%     511.354ms      17.045ms            30  
+                               TorchDynamo Cache Lookup         0.27%       6.143ms         0.27%       6.143ms     204.767us            30  
+                                            aten::empty         0.24%       5.637ms         0.24%       5.637ms       1.756us          3210  
+                                       CompiledFunction         0.24%       5.630ms        17.45%     402.426ms      13.414ms            30  
+                                            aten::index         0.21%       4.751ms         0.24%       5.606ms      62.287us            90  
+                                           aten::gather         0.19%       4.381ms         0.19%       4.408ms      73.472us            60  
+                               CompiledFunctionBackward         0.18%       4.239ms        57.77%        1.332s      44.396ms            30  
+                                              aten::sub         0.17%       4.035ms         0.17%       4.035ms     134.484us            30  
+                                               aten::mm         0.15%       3.441ms         0.15%       3.479ms      57.990us            60  
+                             Torch-Compiled Region: 0/0         0.13%       2.964ms        17.63%     406.487ms      13.550ms            30  
+                                          aten::resize_         0.09%       2.186ms         0.09%       2.186ms       1.215us          1800  
+                                            aten::addmm         0.09%       2.179ms         0.12%       2.770ms      92.335us            30  
+                                     aten::_convolution         0.09%       1.980ms         9.42%     217.103ms     361.839us           600  
+autograd::engine::evaluate_function: CompiledFunctio...         0.08%       1.906ms        57.85%        1.334s      44.459ms            30  
+                                         aten::_to_copy         0.08%       1.857ms         2.36%      54.369ms      69.704us           780  
+autograd::engine::evaluate_function: torch::autograd...         0.08%       1.846ms         0.20%       4.715ms       2.535us          1860  
+                                      aten::as_strided_         0.08%       1.836ms         0.08%       1.836ms       2.782us           660  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 2.306s

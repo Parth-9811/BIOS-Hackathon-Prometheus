@@ -1,0 +1,9 @@
+# Tested with Python 3.11 and PyTorch 2.15 (CPU build) on Linux.
+# For the CPU-only PyTorch wheels:
+#   pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.4
+torchvision
+datasets      # CIFAR-10 download from the Hugging Face mirror
+pillow
+numpy
+matplotlib    # make_plots.py

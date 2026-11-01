@@ -1,0 +1,118 @@
+{
+  "name": "accelerated",
+  "seed": 0,
+  "target_acc": 0.8,
+  "reached": true,
+  "time_to_target_s": 199.5920767010175,
+  "energy_to_target_j": 5380.887453,
+  "final_acc": 0.8109,
+  "history": [
+    {
+      "epoch": 1,
+      "train_s": 19.93,
+      "loss": 1.8778727054595947,
+      "test_acc": 0.28,
+      "joules": 551.4
+    },
+    {
+      "epoch": 2,
+      "train_s": 38.12,
+      "loss": 1.5596359968185425,
+      "test_acc": 0.4625,
+      "joules": 1035.4
+    },
+    {
+      "epoch": 3,
+      "train_s": 56.38,
+      "loss": 1.269156575202942,
+      "test_acc": 0.5326,
+      "joules": 1514.5
+    },
+    {
+      "epoch": 4,
+      "train_s": 74.73,
+      "loss": 1.1247994899749756,
+      "test_acc": 0.627,
+      "joules": 1988.8
+    },
+    {
+      "epoch": 5,
+      "train_s": 93.16,
+      "loss": 1.0205631256103516,
+      "test_acc": 0.6243,
+      "joules": 2462.0
+    },
+    {
+      "epoch": 6,
+      "train_s": 111.19,
+      "loss": 0.9510161876678467,
+      "test_acc": 0.6728,
+      "joules": 2950.0
+    },
+    {
+      "epoch": 7,
+      "train_s": 129.3,
+      "loss": 0.8748166561126709,
+      "test_acc": 0.6188,
+      "joules": 3439.3
+    },
+    {
+      "epoch": 8,
+      "train_s": 147.38,
+      "loss": 0.8055928945541382,
+      "test_acc": 0.6964,
+      "joules": 3928.8
+    },
+    {
+      "epoch": 9,
+      "train_s": 165.12,
+      "loss": 0.7159585952758789,
+      "test_acc": 0.7504,
+      "joules": 4418.9
+    },
+    {
+      "epoch": 10,
+      "train_s": 182.42,
+      "loss": 0.6112381815910339,
+      "test_acc": 0.789,
+      "joules": 4901.7
+    },
+    {
+      "epoch": 11,
+      "train_s": 199.59,
+      "loss": 0.5126473903656006,
+      "test_acc": 0.8109,
+      "joules": 5380.9
+    }
+  ],
+  "env": {
+    "torch": "2.15.0+cpu",
+    "python": "3.11.18",
+    "cpu": "AMD Ryzen 7 250 w/ Radeon 780M Graphics",
+    "logical_cpus": 16,
+    "torch_threads": 8,
+    "avx512_bf16": true,
+    "amx_bf16": false,
+    "mkldnn": true,
+    "env": {
+      "OMP_NUM_THREADS": null,
+      "KMP_AFFINITY": null,
+      "GOMP_CPU_AFFINITY": null,
+      "LD_PRELOAD": null
+    }
+  },
+  "max_epochs": 11,
+  "threads": 8,
+  "source": "hf",
+  "synthetic": false,
+  "tag": "final11",
+  "batch_size": 256,
+  "base_lr": 0.1,
+  "warmup_epochs": 1.0,
+  "schedule": "onecycle",
+  "epochs_for_schedule": null,
+  "channels_last": true,
+  "compile": false,
+  "bf16": true,
+  "profile": false
+}

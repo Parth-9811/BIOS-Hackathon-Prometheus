@@ -1,0 +1,59 @@
+{
+  "name": "accelerated",
+  "seed": 0,
+  "target_acc": 1.01,
+  "reached": false,
+  "time_to_target_s": null,
+  "energy_to_target_j": null,
+  "final_acc": 0.3982,
+  "history": [
+    {
+      "epoch": 1,
+      "train_s": 23.81,
+      "loss": 2.3157567977905273,
+      "test_acc": 0.2883,
+      "joules": 873.9
+    },
+    {
+      "epoch": 2,
+      "train_s": 47.8,
+      "loss": 1.757634162902832,
+      "test_acc": 0.3982,
+      "joules": 1711.4
+    }
+  ],
+  "env": {
+    "torch": "2.15.0+cpu",
+    "python": "3.11.18",
+    "cpu": "AMD Ryzen 7 250 w/ Radeon 780M Graphics",
+    "logical_cpus": 16,
+    "torch_threads": 8,
+    "avx512_bf16": true,
+    "amx_bf16": false,
+    "mkldnn": true,
+    "env": {
+      "OMP_NUM_THREADS": null,
+      "KMP_AFFINITY": null,
+      "GOMP_CPU_AFFINITY": null,
+      "LD_PRELOAD": null
+    }
+  },
+  "max_epochs": 2,
+  "threads": 8,
+  "source": "hf",
+  "synthetic": false,
+  "model": "shufflenet_v2_x1_0",
+  "out_dir": "results/shufflenet_v2_x1_0/tune",
+  "tag": "bf16",
+  "batch_size": 256,
+  "base_lr": 0.1,
+  "warmup_epochs": 1.0,
+  "schedule": "onecycle",
+  "epochs_for_schedule": null,
+  "channels_last": false,
+  "compile": false,
+  "bf16": true,
+  "compile_mode": "default",
+  "flush_denormal": false,
+  "profile": false
+}

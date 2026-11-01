@@ -1,0 +1,143 @@
+{
+  "name": "accelerated",
+  "seed": 0,
+  "target_acc": 0.72,
+  "reached": true,
+  "time_to_target_s": 224.0033826020226,
+  "energy_to_target_j": 6504.129933,
+  "final_acc": 0.7309,
+  "history": [
+    {
+      "epoch": 1,
+      "train_s": 16.95,
+      "loss": 2.0962486267089844,
+      "test_acc": 0.3127,
+      "joules": 524.4
+    },
+    {
+      "epoch": 2,
+      "train_s": 32.54,
+      "loss": 1.7872905731201172,
+      "test_acc": 0.3726,
+      "joules": 992.1
+    },
+    {
+      "epoch": 3,
+      "train_s": 48.17,
+      "loss": 1.5426000356674194,
+      "test_acc": 0.4684,
+      "joules": 1457.6
+    },
+    {
+      "epoch": 4,
+      "train_s": 63.86,
+      "loss": 1.402897834777832,
+      "test_acc": 0.4752,
+      "joules": 1921.1
+    },
+    {
+      "epoch": 5,
+      "train_s": 79.62,
+      "loss": 1.3297324180603027,
+      "test_acc": 0.5309,
+      "joules": 2382.4
+    },
+    {
+      "epoch": 6,
+      "train_s": 95.55,
+      "loss": 1.272735595703125,
+      "test_acc": 0.5495,
+      "joules": 2845.9
+    },
+    {
+      "epoch": 7,
+      "train_s": 111.29,
+      "loss": 1.2212270498275757,
+      "test_acc": 0.5305,
+      "joules": 3302.7
+    },
+    {
+      "epoch": 8,
+      "train_s": 127.06,
+      "loss": 1.1823149919509888,
+      "test_acc": 0.5634,
+      "joules": 3758.6
+    },
+    {
+      "epoch": 9,
+      "train_s": 142.9,
+      "loss": 1.1249617338180542,
+      "test_acc": 0.6064,
+      "joules": 4214.5
+    },
+    {
+      "epoch": 10,
+      "train_s": 158.74,
+      "loss": 1.0862702131271362,
+      "test_acc": 0.6352,
+      "joules": 4666.6
+    },
+    {
+      "epoch": 11,
+      "train_s": 174.58,
+      "loss": 1.0373002290725708,
+      "test_acc": 0.5971,
+      "joules": 5115.9
+    },
+    {
+      "epoch": 12,
+      "train_s": 191.36,
+      "loss": 0.9639487266540527,
+      "test_acc": 0.6733,
+      "joules": 5592.2
+    },
+    {
+      "epoch": 13,
+      "train_s": 208.04,
+      "loss": 0.8903559446334839,
+      "test_acc": 0.6881,
+      "joules": 6059.2
+    },
+    {
+      "epoch": 14,
+      "train_s": 224.0,
+      "loss": 0.8098645806312561,
+      "test_acc": 0.7309,
+      "joules": 6504.1
+    }
+  ],
+  "env": {
+    "torch": "2.15.0+cpu",
+    "python": "3.11.18",
+    "cpu": "AMD Ryzen 7 250 w/ Radeon 780M Graphics",
+    "logical_cpus": 16,
+    "torch_threads": 8,
+    "avx512_bf16": true,
+    "amx_bf16": false,
+    "mkldnn": true,
+    "env": {
+      "OMP_NUM_THREADS": null,
+      "KMP_AFFINITY": null,
+      "GOMP_CPU_AFFINITY": null,
+      "LD_PRELOAD": null
+    }
+  },
+  "max_epochs": 15,
+  "threads": 8,
+  "source": "hf",
+  "synthetic": false,
+  "model": "shufflenet_v2_x1_0",
+  "out_dir": "results/shufflenet_v2_x1_0/tune",
+  "tag": "e15",
+  "batch_size": 256,
+  "base_lr": 0.1,
+  "warmup_epochs": 1.0,
+  "schedule": "onecycle",
+  "epochs_for_schedule": null,
+  "channels_last": false,
+  "compile": false,
+  "bf16": false,
+  "compile_mode": "default",
+  "flush_denormal": false,
+  "profile": false
+}

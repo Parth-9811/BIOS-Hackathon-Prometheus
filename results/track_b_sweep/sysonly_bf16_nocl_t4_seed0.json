@@ -1,0 +1,58 @@
+{
+  "name": "sysonly",
+  "seed": 0,
+  "target_acc": 1.01,
+  "reached": false,
+  "time_to_target_s": null,
+  "energy_to_target_j": null,
+  "final_acc": 0.5557,
+  "history": [
+    {
+      "epoch": 1,
+      "train_s": 40.39,
+      "loss": 1.7123273611068726,
+      "test_acc": 0.4833,
+      "joules": 1419.9
+    },
+    {
+      "epoch": 2,
+      "train_s": 77.77,
+      "loss": 1.340410828590393,
+      "test_acc": 0.5557,
+      "joules": 2724.6
+    }
+  ],
+  "env": {
+    "torch": "2.15.0+cpu",
+    "python": "3.11.18",
+    "cpu": "AMD Ryzen 7 250 w/ Radeon 780M Graphics",
+    "logical_cpus": 16,
+    "torch_threads": 4,
+    "avx512_bf16": true,
+    "amx_bf16": false,
+    "mkldnn": true,
+    "env": {
+      "OMP_NUM_THREADS": null,
+      "KMP_AFFINITY": null,
+      "GOMP_CPU_AFFINITY": null,
+      "LD_PRELOAD": null
+    }
+  },
+  "max_epochs": 2,
+  "threads": 4,
+  "source": "hf",
+  "synthetic": false,
+  "out_dir": "results/track_b_sweep",
+  "tag": "bf16_nocl_t4",
+  "batch_size": 64,
+  "base_lr": 0.01,
+  "warmup_epochs": 0.0,
+  "schedule": "none",
+  "epochs_for_schedule": null,
+  "channels_last": false,
+  "compile": false,
+  "bf16": true,
+  "compile_mode": "default",
+  "flush_denormal": true,
+  "profile": false
+}

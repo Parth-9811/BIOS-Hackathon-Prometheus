@@ -1,0 +1,104 @@
+{
+  "name": "accelerated",
+  "seed": 0,
+  "target_acc": 0.8,
+  "reached": false,
+  "time_to_target_s": null,
+  "energy_to_target_j": null,
+  "final_acc": 0.7907,
+  "history": [
+    {
+      "epoch": 1,
+      "train_s": 32.93,
+      "loss": 2.015101671218872,
+      "test_acc": 0.3878,
+      "joules": 492.5
+    },
+    {
+      "epoch": 2,
+      "train_s": 62.83,
+      "loss": 1.5291091203689575,
+      "test_acc": 0.4462,
+      "joules": 939.9
+    },
+    {
+      "epoch": 3,
+      "train_s": 92.86,
+      "loss": 1.3258312940597534,
+      "test_acc": 0.5367,
+      "joules": 1389.0
+    },
+    {
+      "epoch": 4,
+      "train_s": 122.77,
+      "loss": 1.2054482698440552,
+      "test_acc": 0.533,
+      "joules": 1836.4
+    },
+    {
+      "epoch": 5,
+      "train_s": 152.91,
+      "loss": 1.1151901483535767,
+      "test_acc": 0.6298,
+      "joules": 2287.2
+    },
+    {
+      "epoch": 6,
+      "train_s": 183.01,
+      "loss": 1.0257593393325806,
+      "test_acc": 0.6399,
+      "joules": 2737.3
+    },
+    {
+      "epoch": 7,
+      "train_s": 213.26,
+      "loss": 0.9309988021850586,
+      "test_acc": 0.6992,
+      "joules": 3189.9
+    },
+    {
+      "epoch": 8,
+      "train_s": 243.3,
+      "loss": 0.7806028127670288,
+      "test_acc": 0.7624,
+      "joules": 3639.2
+    },
+    {
+      "epoch": 9,
+      "train_s": 275.6,
+      "loss": 0.6255090236663818,
+      "test_acc": 0.7907,
+      "joules": 4122.3
+    }
+  ],
+  "env": {
+    "torch": "2.15.0+cpu",
+    "python": "3.11.18",
+    "cpu": "AMD Ryzen 7 250 w/ Radeon 780M Graphics",
+    "logical_cpus": 16,
+    "torch_threads": 8,
+    "avx512_bf16": true,
+    "amx_bf16": false,
+    "mkldnn": true,
+    "env": {
+      "OMP_NUM_THREADS": null,
+      "KMP_AFFINITY": null,
+      "GOMP_CPU_AFFINITY": null,
+      "LD_PRELOAD": null
+    }
+  },
+  "max_epochs": 9,
+  "threads": null,
+  "source": "hf",
+  "synthetic": false,
+  "tag": "e9",
+  "batch_size": 128,
+  "base_lr": 0.2,
+  "warmup_epochs": 1.0,
+  "schedule": "onecycle",
+  "epochs_for_schedule": null,
+  "channels_last": true,
+  "compile": false,
+  "bf16": true,
+  "profile": false
+}

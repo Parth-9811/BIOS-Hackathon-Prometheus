@@ -1,0 +1,129 @@
+{
+  "name": "accelerated",
+  "seed": 0,
+  "target_acc": 0.72,
+  "reached": false,
+  "time_to_target_s": null,
+  "energy_to_target_j": null,
+  "final_acc": 0.6951,
+  "history": [
+    {
+      "epoch": 1,
+      "train_s": 15.57,
+      "loss": 2.161076068878174,
+      "test_acc": 0.1063,
+      "joules": 586.6
+    },
+    {
+      "epoch": 2,
+      "train_s": 30.1,
+      "loss": 1.9077279567718506,
+      "test_acc": 0.3302,
+      "joules": 1093.2
+    },
+    {
+      "epoch": 3,
+      "train_s": 44.69,
+      "loss": 1.5746344327926636,
+      "test_acc": 0.4484,
+      "joules": 1602.5
+    },
+    {
+      "epoch": 4,
+      "train_s": 59.34,
+      "loss": 1.4371188879013062,
+      "test_acc": 0.4566,
+      "joules": 2113.9
+    },
+    {
+      "epoch": 5,
+      "train_s": 74.12,
+      "loss": 1.3534668684005737,
+      "test_acc": 0.5404,
+      "joules": 2629.2
+    },
+    {
+      "epoch": 6,
+      "train_s": 89.22,
+      "loss": 1.3434078693389893,
+      "test_acc": 0.5126,
+      "joules": 3139.7
+    },
+    {
+      "epoch": 7,
+      "train_s": 104.37,
+      "loss": 1.2541309595108032,
+      "test_acc": 0.5425,
+      "joules": 3637.8
+    },
+    {
+      "epoch": 8,
+      "train_s": 119.52,
+      "loss": 1.198737382888794,
+      "test_acc": 0.5786,
+      "joules": 4128.1
+    },
+    {
+      "epoch": 9,
+      "train_s": 134.74,
+      "loss": 1.1291148662567139,
+      "test_acc": 0.6088,
+      "joules": 4614.3
+    },
+    {
+      "epoch": 10,
+      "train_s": 150.03,
+      "loss": 1.0591058731079102,
+      "test_acc": 0.6412,
+      "joules": 5092.5
+    },
+    {
+      "epoch": 11,
+      "train_s": 165.43,
+      "loss": 0.9648786187171936,
+      "test_acc": 0.6763,
+      "joules": 5570.2
+    },
+    {
+      "epoch": 12,
+      "train_s": 180.81,
+      "loss": 0.8901638984680176,
+      "test_acc": 0.6951,
+      "joules": 6040.6
+    }
+  ],
+  "env": {
+    "torch": "2.15.0+cpu",
+    "python": "3.11.18",
+    "cpu": "AMD Ryzen 7 250 w/ Radeon 780M Graphics",
+    "logical_cpus": 16,
+    "torch_threads": 8,
+    "avx512_bf16": true,
+    "amx_bf16": false,
+    "mkldnn": true,
+    "env": {
+      "OMP_NUM_THREADS": null,
+      "KMP_AFFINITY": null,
+      "GOMP_CPU_AFFINITY": null,
+      "LD_PRELOAD": null
+    }
+  },
+  "max_epochs": 12,
+  "threads": 8,
+  "source": "hf",
+  "synthetic": false,
+  "model": "shufflenet_v2_x1_0",
+  "out_dir": "results/shufflenet_v2_x1_0/tune",
+  "tag": "e12",
+  "batch_size": 256,
+  "base_lr": 0.1,
+  "warmup_epochs": 1.0,
+  "schedule": "onecycle",
+  "epochs_for_schedule": null,
+  "channels_last": false,
+  "compile": false,
+  "bf16": false,
+  "compile_mode": "default",
+  "flush_denormal": false,
+  "profile": false
+}

@@ -1,0 +1,177 @@
+{
+  "name": "sysonly",
+  "seed": 0,
+  "target_acc": 0.8,
+  "reached": true,
+  "time_to_target_s": 648.5972969719951,
+  "energy_to_target_j": 19892.811320999997,
+  "final_acc": 0.8023,
+  "history": [
+    {
+      "epoch": 1,
+      "train_s": 36.86,
+      "loss": 1.7075655460357666,
+      "test_acc": 0.502,
+      "joules": 1329.4
+    },
+    {
+      "epoch": 2,
+      "train_s": 70.3,
+      "loss": 1.3372738361358643,
+      "test_acc": 0.5518,
+      "joules": 2496.9
+    },
+    {
+      "epoch": 3,
+      "train_s": 104.97,
+      "loss": 1.1390297412872314,
+      "test_acc": 0.6312,
+      "joules": 3706.5
+    },
+    {
+      "epoch": 4,
+      "train_s": 138.2,
+      "loss": 1.0139256715774536,
+      "test_acc": 0.6708,
+      "joules": 4868.8
+    },
+    {
+      "epoch": 5,
+      "train_s": 171.37,
+      "loss": 0.9381476044654846,
+      "test_acc": 0.6962,
+      "joules": 6029.3
+    },
+    {
+      "epoch": 6,
+      "train_s": 204.77,
+      "loss": 0.8697272539138794,
+      "test_acc": 0.7103,
+      "joules": 7197.6
+    },
+    {
+      "epoch": 7,
+      "train_s": 238.11,
+      "loss": 0.8251256346702576,
+      "test_acc": 0.7343,
+      "joules": 8357.2
+    },
+    {
+      "epoch": 8,
+      "train_s": 272.08,
+      "loss": 0.7767393589019775,
+      "test_acc": 0.7394,
+      "joules": 9355.8
+    },
+    {
+      "epoch": 9,
+      "train_s": 306.14,
+      "loss": 0.7506357431411743,
+      "test_acc": 0.7493,
+      "joules": 10309.1
+    },
+    {
+      "epoch": 10,
+      "train_s": 340.27,
+      "loss": 0.7183570861816406,
+      "test_acc": 0.7562,
+      "joules": 11264.2
+    },
+    {
+      "epoch": 11,
+      "train_s": 374.37,
+      "loss": 0.6846706867218018,
+      "test_acc": 0.7582,
+      "joules": 12218.4
+    },
+    {
+      "epoch": 12,
+      "train_s": 408.49,
+      "loss": 0.6605196595191956,
+      "test_acc": 0.7734,
+      "joules": 13173.2
+    },
+    {
+      "epoch": 13,
+      "train_s": 442.75,
+      "loss": 0.6420563459396362,
+      "test_acc": 0.7649,
+      "joules": 14132.0
+    },
+    {
+      "epoch": 14,
+      "train_s": 477.41,
+      "loss": 0.6228045225143433,
+      "test_acc": 0.7813,
+      "joules": 15101.7
+    },
+    {
+      "epoch": 15,
+      "train_s": 511.64,
+      "loss": 0.6099755167961121,
+      "test_acc": 0.7811,
+      "joules": 16059.7
+    },
+    {
+      "epoch": 16,
+      "train_s": 546.09,
+      "loss": 0.590607225894928,
+      "test_acc": 0.7753,
+      "joules": 17023.8
+    },
+    {
+      "epoch": 17,
+      "train_s": 580.21,
+      "loss": 0.5789785385131836,
+      "test_acc": 0.7804,
+      "joules": 17978.8
+    },
+    {
+      "epoch": 18,
+      "train_s": 614.43,
+      "loss": 0.5622124671936035,
+      "test_acc": 0.7803,
+      "joules": 18936.8
+    },
+    {
+      "epoch": 19,
+      "train_s": 648.6,
+      "loss": 0.5546859502792358,
+      "test_acc": 0.8023,
+      "joules": 19892.8
+    }
+  ],
+  "env": {
+    "torch": "2.15.0+cpu",
+    "python": "3.11.18",
+    "cpu": "AMD Ryzen 7 250 w/ Radeon 780M Graphics",
+    "logical_cpus": 16,
+    "torch_threads": 8,
+    "avx512_bf16": true,
+    "amx_bf16": false,
+    "mkldnn": true,
+    "env": {
+      "OMP_NUM_THREADS": null,
+      "KMP_AFFINITY": null,
+      "GOMP_CPU_AFFINITY": null,
+      "LD_PRELOAD": null
+    }
+  },
+  "max_epochs": 40,
+  "threads": 8,
+  "source": "hf",
+  "synthetic": false,
+  "out_dir": "results/track_b",
+  "tag": "",
+  "batch_size": 64,
+  "base_lr": 0.01,
+  "warmup_epochs": 0.0,
+  "schedule": "none",
+  "epochs_for_schedule": null,
+  "channels_last": true,
+  "compile": false,
+  "bf16": true,
+  "compile_mode": "default",
+  "flush_denormal": false,
+  "profile": false
+}

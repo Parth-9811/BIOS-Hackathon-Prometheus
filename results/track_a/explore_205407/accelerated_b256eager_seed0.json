@@ -1,0 +1,62 @@
+{
+  "name": "accelerated",
+  "seed": 0,
+  "target_acc": 1.01,
+  "reached": false,
+  "time_to_target_s": null,
+  "energy_to_target_j": null,
+  "final_acc": 0.583,
+  "history": [
+    {
+      "epoch": 1,
+      "train_s": 17.73,
+      "loss": 2.135565996170044,
+      "test_acc": 0.3896,
+      "joules": 631.9
+    },
+    {
+      "epoch": 2,
+      "train_s": 34.02,
+      "loss": 1.552173376083374,
+      "test_acc": 0.4956,
+      "joules": 1200.0
+    },
+    {
+      "epoch": 3,
+      "train_s": 50.29,
+      "loss": 1.3047696352005005,
+      "test_acc": 0.583,
+      "joules": 1767.6
+    }
+  ],
+  "env": {
+    "torch": "2.15.0+cpu",
+    "python": "3.11.18",
+    "cpu": "AMD Ryzen 7 250 w/ Radeon 780M Graphics",
+    "logical_cpus": 16,
+    "torch_threads": 8,
+    "avx512_bf16": true,
+    "amx_bf16": false,
+    "mkldnn": true,
+    "env": {
+      "OMP_NUM_THREADS": null,
+      "KMP_AFFINITY": null,
+      "GOMP_CPU_AFFINITY": null,
+      "LD_PRELOAD": null
+    }
+  },
+  "max_epochs": 3,
+  "threads": 8,
+  "source": "hf",
+  "synthetic": false,
+  "tag": "b256eager",
+  "batch_size": 256,
+  "base_lr": 0.1,
+  "warmup_epochs": 1.0,
+  "schedule": "onecycle",
+  "epochs_for_schedule": null,
+  "channels_last": true,
+  "compile": false,
+  "bf16": true,
+  "profile": false
+}
